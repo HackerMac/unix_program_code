@@ -1,0 +1,24 @@
+<assert.h> 验证程序断言
+<complex.h> 复数算术运算支持
+<ctype.h>	字符分类和映射支持
+<errno.h>	出错码
+<fenv.h>	浮点环境
+<float.h>	浮点常量及特性
+<inttypes.h>	整形格式变换
+<iso646.h>	赋值、关系及一元操作符宏
+<limits.h>	实现常量
+<locale.h> 本地化类别及相关定义
+<math.h> 
+<setjmp.h>	非局部goto （7）
+<signal.h>	信号	（10）
+<stdrag.h>	可变长度参数表
+<stdbool.h> 布尔类型和值
+<stddef.h>	标准定义
+<stdint.h>	整形
+<stdio.h>	标准I/O (5)
+<stdlib.h>	实用函数
+<tgmath.h> 通用类型数学宏
+<time.h>	时间和日期(6)
+<wchar.h>	扩充的多字节和宽字节支持
+<wctype.h>	宽字符分类和映射支持
+

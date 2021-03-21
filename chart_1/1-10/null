@@ -1,0 +1,13 @@
+python2.7/pyconfig-64.h:/* #undef _POSIX_SOURCE */
+python3.6m/pyconfig-64.h:/* #undef _POSIX_SOURCE */
+X11/Xosdefs.h: * You may still have to define _POSIX_SOURCE to get it.
+X11/Xosdefs.h:#    if !defined(_POSIX_SOURCE)
+X11/Xosdefs.h:#  if defined(_XOPEN_SOURCE) || defined(_POSIX_SOURCE) || defined(_POSIX_C_SOURCE)
+X11/Xos.h:# if defined(_POSIX_SOURCE) && defined(SVR4)
+X11/Xos.h:/* need to omit _POSIX_SOURCE in order to get what we want in SVR4 */
+X11/Xos.h:#  undef _POSIX_SOURCE
+X11/Xos.h:#  define _POSIX_SOURCE
+X11/Xos.h:# endif /* defined(_POSIX_SOURCE) && defined(SVR4) */
+X11/Xos_r.h:#  ifdef _POSIX_SOURCE
+X11/Xos_r.h:#   define _POSIX_SOURCE
+X11/Xos_r.h:#   undef _POSIX_SOURCE

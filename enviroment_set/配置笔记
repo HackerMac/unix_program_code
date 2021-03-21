@@ -1,0 +1,23 @@
+首先需要安装好apue.h库
+安装方法: 
+wget http://www.apuebook.com/src.3e.tar.gz
+安装完之后进行解压
+tar -zxvf src.3e.tar.gz
+接着进入解压后的文件 apue:
+cd apue/
+然后进行:
+make
+
+接着会报错:
+这是因为缺少libbsd 和 libbsd-devel 这两个相关依赖库
+安装这两个库依赖
+yum install libbsd
+#yum install libbsd_devel
+yum install libbsd-devel.x86_64
+接着重新make操作:
+make
+成功之后将头文件和库拷贝到系统的环境变量:
+[root@iz3cbcpexvgey2z apue.3e]# cp include/apue.h /usr/include/
+[root@iz3cbcpexvgey2z apue.3e]# cp lib/libapue.a /usr/lib
+
+在编译完程序进行链接时需要 在后面加入 -l apue 表示添加apue包进行链接
